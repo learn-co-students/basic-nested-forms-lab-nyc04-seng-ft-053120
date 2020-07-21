@@ -9,9 +9,9 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    #create a new ingredients hash
-    @recipe.ingredients.build(name: "ingredient 1")
-    @recipe.ingredients.build(name: "ingredient 2")
+    #create a new ingredients hash 
+    @recipe.ingredients.build
+    @recipe.ingredients.build
     
   end
 
